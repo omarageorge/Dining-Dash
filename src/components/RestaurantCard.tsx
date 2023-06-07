@@ -18,7 +18,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant }) => {
         <img
           src={restaurant.imageSrc}
           alt={restaurant.name}
-          className='w-full h-56 object-cover'
+          className='w-full h-44 object-cover'
         />
         <div className='bg-whites text-gray-800 p-4'>
           <span className='font-semibold '>{restaurant.name}</span>
