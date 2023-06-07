@@ -62,7 +62,7 @@ const RestaurantPage: React.FC = () => {
       </nav>
 
       {/* Header section */}
-      <header className='relative z-10 w-full h-[60vh]'>
+      <header className='relative z-10 w-full h-[65vh]'>
         <div className='absolute z-20 w-full h-full bg-[url("/images/header-background.jpg")] bg-cover bg-center'></div>
         <div className='absolute z-30 w-full h-full bg-black opacity-70'></div>
         <div className='absolute z-40 w-full h-full flex items-center justify-center'>
