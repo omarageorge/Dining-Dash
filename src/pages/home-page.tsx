@@ -69,7 +69,7 @@ const HomePage: React.FC = () => {
       </header>
 
       {/* Restaurant Listings */}
-      <main className='w-full py-10 bg-gray-100 bg-white'>
+      <main className='w-full py-10  bg-white'>
         {/* Section title */}
         <h1 className='text-2xl text-slate-800 text-center font-semibold'>
           Featured Restaurants
