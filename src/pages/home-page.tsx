@@ -69,7 +69,7 @@ const HomePage: React.FC = () => {
       </header>
 
       {/* Restaurant Listings */}
-      <main className='w-full py-10 bg-gray-100'>
+      <main className='w-full py-10 bg-gray-100 bg-white'>
         {/* Section title */}
         <h1 className='text-2xl text-slate-800 text-center font-semibold'>
           Featured Restaurants
@@ -86,7 +86,7 @@ const HomePage: React.FC = () => {
 
       {/* Footer section */}
       <footer className='w-full py-6 bg-slate-800 flex items-center justify-center'>
-        <span className='text-gray-200'>
+        <span className='text-gray-200 text-sm text-center '>
           Copyright &copy; 2023 DiningDash. All rights reserved.
         </span>
       </footer>
