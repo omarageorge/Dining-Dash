@@ -1,4 +1,6 @@
+import Footer from '../components/Footer';
 import RestaurantCard from '../components/RestaurantCard';
+import SubTitle from '../components/SubTitle';
 
 const HomePage: React.FC = () => {
   const restaurants = [
@@ -57,7 +59,7 @@ const HomePage: React.FC = () => {
               <input
                 type='search'
                 placeholder='Search by cuisine, location, or restaurant name...'
-                className='w-72 bg-gray-100 px-4 py-2 rounded-sm outline-none text-green placeholder:text-md placeholder:text-slate-500 placeholder:italic md:w-[40rem]'
+                className='w-72 bg-gray-100 px-4 py-3 rounded-sm outline-none text-green placeholder:text-md placeholder:text-slate-500 placeholder:italic md:w-[40rem]'
               />
             </form>
 
@@ -71,9 +73,7 @@ const HomePage: React.FC = () => {
       {/* Restaurant Listings */}
       <main className='w-full py-10  bg-white'>
         {/* Section title */}
-        <h1 className='text-2xl text-slate-800 text-center font-semibold'>
-          Featured Restaurants
-        </h1>
+        <SubTitle text='Featured Restaurants' />
 
         <div className='w-full m-auto mt-8 px-4'>
           <div className='w-full grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4'>
@@ -85,11 +85,7 @@ const HomePage: React.FC = () => {
       </main>
 
       {/* Footer section */}
-      <footer className='w-full py-6 bg-slate-800 flex items-center justify-center'>
-        <span className='text-gray-200 text-sm text-center '>
-          Copyright &copy; 2023 DiningDash. All rights reserved.
-        </span>
-      </footer>
+      <Footer />
     </>
   );
 };
