@@ -75,12 +75,10 @@ const HomePage: React.FC = () => {
         {/* Section title */}
         <SubTitle text='Featured Restaurants' />
 
-        <div className='w-full m-auto mt-8 px-4'>
-          <div className='w-full grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4'>
-            {restaurants.map((restaurant, index) => (
-              <RestaurantCard key={index} restaurant={restaurant} />
-            ))}
-          </div>
+        <div className='w-full mt-8 px-4 grid grid-cols-1 justify-center gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:w-[85%] md:mx-auto'>
+          {restaurants.map((restaurant, index) => (
+            <RestaurantCard key={index} restaurant={restaurant} />
+          ))}
         </div>
       </main>
 
