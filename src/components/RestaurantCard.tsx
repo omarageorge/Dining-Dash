@@ -19,16 +19,16 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant }) => {
         alt={restaurant.name}
         className='w-full h-56 object-cover'
       />
-      <div className='bg-gray-50 text-gray-800 p-4'>
+      <div className='bg-whites text-gray-800 p-4'>
         <span className='font-semibold '>{restaurant.name}</span>
 
         <div className='w-full h-auto flex items-center justify-between mt-1 text-sm '>
           <span className='flex items-center'>
-            <FaConciergeBell />
+            <FaConciergeBell color='orange' />
             <span className='ml-1'>{restaurant.cuisine}</span>
           </span>
           <span className='flex items-center'>
-            <FaMapMarkerAlt />
+            <FaMapMarkerAlt color='red' />
             <span className='ml-1'>{restaurant.location}</span>
           </span>
         </div>
