@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
       </main>
 
       {/* Footer section */}
-      <footer className='w-full py-6 bg-slate-700 flex items-center justify-center'>
+      <footer className='w-full py-6 bg-slate-800 flex items-center justify-center'>
         <span className='text-gray-200'>
           Copyright &copy; 2023 DiningDash. All rights reserved.
         </span>
