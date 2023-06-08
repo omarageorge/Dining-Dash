@@ -11,22 +11,24 @@ export const SidebarLinks: React.FC<SidebarLinksProps> = ({ children }) => (
 );
 
 type SidebarLinkProps = {
+  route: string;
   label: string;
   icon: IconType;
 };
 
 export const SidebarLink: React.FC<SidebarLinkProps> = ({
-  icon: Icon,
+  route,
   label,
+  icon: Icon,
 }) => {
   return (
-    <li className='mx-2 px-3 py-4 bg-gray-700 hover:bg-gray-400 transition delay-100 ease-in rounded-md text-white hover:text-yellow-300 flex items-center justify-center cursor-pointer md:py-3 md:mx-4'>
-      <Link to='/admin'>
-        <div className='flex items-center space-x-2 text-md'>
+    <div>
+      <Link to={route}>
+        <li className='mx-2 px-3 py-4 bg-gray-700 hover:bg-gray-400 transition delay-100 ease-in rounded-md text-white hover:text-yellow-300 flex items-center justify-center space-x-2 cursor-pointer select-none md:py-3 md:mx-4'>
           <span>{<Icon />}</span>
           <span className='hidden md:block'>{label}</span>
-        </div>
+        </li>
       </Link>
-    </li>
+    </div>
   );
 };

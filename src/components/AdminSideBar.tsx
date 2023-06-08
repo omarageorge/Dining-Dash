@@ -1,10 +1,4 @@
-import {
-  FaUserCircle,
-  FaSignOutAlt,
-  FaUtensils,
-  FaCoffee,
-  FaHamburger,
-} from 'react-icons/fa';
+import { FaUserCircle, FaSignOutAlt, FaUtensils, FaPlus } from 'react-icons/fa';
 import { SidebarLinks, SidebarLink } from './SidebarLinks';
 
 const AdminSideBar = () => {
@@ -22,9 +16,16 @@ const AdminSideBar = () => {
 
         {/* Links */}
         <SidebarLinks>
-          <SidebarLink icon={FaUtensils} label='Restaurants' />
-          <SidebarLink icon={FaCoffee} label='Restaurants' />
-          <SidebarLink icon={FaHamburger} label='Restaurants' />
+          <SidebarLink
+            route='/admin/restaurants'
+            label='Manage Restaurants'
+            icon={FaUtensils}
+          />
+          <SidebarLink
+            route='/admin/restaurants/add'
+            label='Add New Restaurant'
+            icon={FaPlus}
+          />
         </SidebarLinks>
       </div>
 
