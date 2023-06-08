@@ -55,7 +55,7 @@ const HomePage: React.FC = () => {
               <span className='text-yellow-400'>Dash</span>
             </h1>
 
-            <form className='' action=''>
+            <form>
               <input
                 type='search'
                 placeholder='Search by cuisine, location, or restaurant name...'
