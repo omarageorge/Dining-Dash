@@ -51,8 +51,8 @@ const HomePage: React.FC = () => {
         <div className='absolute z-30 w-full h-full flex  items-center justify-center'>
           <div className='text-center space-y-6'>
             <h1 className='text-4xl italic space-x-1'>
-              <span className='text-orange-400'>Dining</span>
-              <span className='text-yellow-400'>Dash</span>
+              <span className='text-orange-500'>Dining</span>
+              <span className='text-yellow-500'>Dash</span>
             </h1>
 
             <form>

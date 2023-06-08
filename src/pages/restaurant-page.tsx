@@ -51,7 +51,7 @@ const RestaurantPage: React.FC = () => {
     <>
       {/* Navigation menu */}
       <nav className='flex items-center justify-between px-8 py-8 bg-gray-100'>
-        <span className='font-semibold text-xl'>
+        <span className='font-semibold text-xl italic'>
           <span className='text-orange-500'>Dining</span>
           <span className='text-yellow-500'>Dash</span>
         </span>
