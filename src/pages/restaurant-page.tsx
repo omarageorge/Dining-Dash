@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaHome, FaConciergeBell, FaMapMarkerAlt } from 'react-icons/fa';
 import Footer from '../components/Footer';
 import SubTitle from '../components/SubTitle';
@@ -54,9 +55,9 @@ const RestaurantPage: React.FC = () => {
       <nav className='flex items-center justify-between px-8 py-8 bg-gray-100'>
         <DiningDashLogo />
 
-        <a href='/' className='text-xl text-gray-600'>
+        <Link to='/' className='text-xl text-gray-600'>
           <FaHome />
-        </a>
+        </Link>
       </nav>
 
       {/* Header section */}
