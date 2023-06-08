@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import HomePage from './pages/home-page';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './styles/globals.scss';
 import RestaurantPage from './pages/restaurant-page';
+import ErrorPage from './pages/error-page';
+import './styles/globals.scss';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: 'restaurant/:restaurantId',
     element: <RestaurantPage />,
+  },
+  {
+    path: '*',
+    element: <ErrorPage />,
   },
 ]);
 
