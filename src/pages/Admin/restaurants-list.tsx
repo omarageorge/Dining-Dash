@@ -60,11 +60,21 @@ const RestaurantsList: React.FC = () => {
                 className='md:flex md:items-center md:justify-center'
               >
                 <div className='space-x-3'>
+                  {/* Details */}
                   <Link to='/admin/restaurants/edit'>
                     <span className='rounded-sm border-4 border-slate-50 p-1 bg-slate-100 hover:bg-slate-300 transition-all delay-100 ease-in text-slate-600'>
-                      <span>View</span>
+                      <span>Details</span>
                     </span>
                   </Link>
+
+                  {/* Menu */}
+                  <Link to='/admin/restaurants/edit'>
+                    <span className='rounded-sm border-4 border-green-50 p-1 bg-green-100 hover:bg-green-300 transition-all delay-100 ease-in text-green-600'>
+                      <span>Menu</span>
+                    </span>
+                  </Link>
+
+                  {/* Delete */}
                   <button className='rounded-sm border-4 border-red-50 p-1 bg-red-100 hover:bg-red-300 transition-all delay-100 ease-in text-red-600'>
                     <span>Delete</span>
                   </button>
