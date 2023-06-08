@@ -59,7 +59,7 @@ const RestaurantsList: React.FC = () => {
                 data-cell='Options:'
                 className='md:flex md:items-center md:justify-center'
               >
-                <div className='space-x-3'>
+                <div className='text-right md:space-x-3'>
                   {/* Details */}
                   <Link to='/admin/restaurants/edit'>
                     <span className='rounded-sm border-4 border-slate-50 p-1 bg-slate-100 hover:bg-slate-300 transition-all delay-100 ease-in text-slate-600'>
