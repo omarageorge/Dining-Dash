@@ -2,6 +2,7 @@ import { FaHome, FaConciergeBell, FaMapMarkerAlt } from 'react-icons/fa';
 import Footer from '../components/Footer';
 import SubTitle from '../components/SubTitle';
 import MenuItem from '../components/MenuItem';
+import DiningDashLogo from '../components/DiningDashLogo';
 
 const RestaurantPage: React.FC = () => {
   const menuItems = [
@@ -51,10 +52,7 @@ const RestaurantPage: React.FC = () => {
     <>
       {/* Navigation menu */}
       <nav className='flex items-center justify-between px-8 py-8 bg-gray-100'>
-        <span className='font-semibold text-xl italic'>
-          <span className='text-orange-500'>Dining</span>
-          <span className='text-yellow-500'>Dash</span>
-        </span>
+        <DiningDashLogo />
 
         <a href='/' className='text-xl text-gray-600'>
           <FaHome />
