@@ -8,3 +8,32 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+table {
+  @apply w-full border-collapse text-left rounded-md overflow-hidden;
+
+  thead {
+    @apply bg-slate-800 text-white;
+
+    th {
+      @apply hidden p-4 md:table-cell;
+    }
+  }
+
+  tbody {
+    @apply bg-slate-300;
+
+    tr {
+      @apply even:bg-slate-200;
+    }
+
+    td {
+      @apply grid gap-2 p-3 grid-cols-2 md:table-cell;
+
+      &::before {
+        content: attr(data-cell);
+        @apply font-bold capitalize text-slate-700 md:hidden;
+      }
+    }
+  }
+}
