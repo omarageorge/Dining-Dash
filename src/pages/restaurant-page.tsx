@@ -52,10 +52,10 @@ const RestaurantPage: React.FC = () => {
   return (
     <>
       {/* Navigation menu */}
-      <nav className='flex items-center justify-between px-8 py-8 bg-gray-100'>
+      <nav className='flex items-center justify-between px-8 py-8 bg-slate-800'>
         <DiningDashLogo />
 
-        <Link to='/' className='text-xl text-gray-600'>
+        <Link to='/' className='text-xl text-gray-100'>
           <FaHome />
         </Link>
       </nav>
