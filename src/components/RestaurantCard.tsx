@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaConciergeBell, FaMapMarkerAlt } from 'react-icons/fa';
 
 type Restaurant = {
@@ -13,7 +14,7 @@ type RestaurantCardProps = {
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant }) => {
   return (
-    <a href='/restaurant'>
+    <Link to='/restaurant/1232'>
       <div className='rounded-md overflow-hidden shadow-md'>
         <img
           src={restaurant.imageSrc}
@@ -35,7 +36,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ restaurant }) => {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
