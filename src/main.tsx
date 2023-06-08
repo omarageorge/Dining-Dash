@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import HomePage from './pages/home-page';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './assets/styles/globals.scss';
+import './styles/globals.scss';
 import RestaurantPage from './pages/restaurant-page';
 
 const router = createBrowserRouter([
