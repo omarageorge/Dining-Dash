@@ -9,6 +9,7 @@ import RestaurantAddForm from '../pages/Admin/restaurant-add-form';
 import RestaurantEditForm from '../pages/Admin/restaurant-edit-form';
 import RestaurantMenu from '../pages/Admin/restaurant-menu';
 import RestaurantAddDish from '../pages/Admin/restaurant-add-dish';
+import LoginPage from '../pages/login-page';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: 'restaurant/:restaurantId',
     element: <RestaurantPage />,
+  },
+  {
+    path: 'login',
+    element: <LoginPage />,
   },
   {
     path: '/admin',
