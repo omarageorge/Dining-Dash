@@ -1,10 +1,10 @@
 import { FaTimes } from 'react-icons/fa';
 
-type RestaurantDish = {
+export type RestaurantDish = {
   name: string;
   description: string;
   ingredients: string;
-  price: number;
+  price: string;
 };
 
 type DishProps = {

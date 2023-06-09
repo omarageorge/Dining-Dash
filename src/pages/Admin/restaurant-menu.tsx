@@ -9,41 +9,41 @@ const RestaurantMenu = () => {
       name: 'Grilled Chicken',
       description: 'Juicy grilled chicken marinated with herbs and spices.',
       ingredients: 'Chicken, herbs, spices',
-      price: 25000, // Price in UGX
+      price: '25000', // Price in UGX
     },
     {
       name: 'Margherita Pizza',
       description:
         'Classic pizza topped with tomato sauce, mozzarella cheese, and basil.',
       ingredients: 'Tomato sauce, mozzarella cheese, basil',
-      price: 18000, // Price in UGX
+      price: '18000', // Price in UGX
     },
     {
       name: 'Beef Burger',
       description:
         'Delicious beef patty burger with lettuce, tomato, cheese, and pickles.',
       ingredients: 'Beef patty, lettuce, tomato, cheese, pickles',
-      price: 15000, // Price in UGX
+      price: '15000', // Price in UGX
     },
     {
       name: 'Vegetable Stir-Fry',
       description: 'Assorted vegetables stir-fried in soy sauce and garlic.',
       ingredients: 'Assorted vegetables, soy sauce, garlic',
-      price: 12000, // Price in UGX
+      price: '12000', // Price in UGX
     },
     {
       name: 'Pasta Carbonara',
       description:
         'Classic Italian pasta dish with spaghetti, bacon, eggs, and Parmesan cheese.',
       ingredients: 'Spaghetti, bacon, eggs, Parmesan cheese',
-      price: 20000, // Price in UGX
+      price: '20000', // Price in UGX
     },
     {
       name: 'Fish and Chips',
       description:
         'Crispy fish fillet served with potato fries and tartar sauce.',
       ingredients: 'Fish fillet, potato fries, tartar sauce',
-      price: 22000, // Price in UGX
+      price: '22000', // Price in UGX
     },
   ];
 

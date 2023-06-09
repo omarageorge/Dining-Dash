@@ -1,9 +1,4 @@
-type RestaurantDish = {
-  name: string;
-  description: string;
-  ingredients: string;
-  price: number;
-};
+import { RestaurantDish } from './Dish';
 
 type MenuItemProps = {
   dish: RestaurantDish;
