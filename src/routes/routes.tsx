@@ -10,6 +10,7 @@ import RestaurantEditForm from '../pages/Admin/restaurant-edit-form';
 import RestaurantMenu from '../pages/Admin/restaurant-menu';
 import RestaurantAddDish from '../pages/Admin/restaurant-add-dish';
 import LoginPage from '../pages/login-page';
+import SignUpPage from '../pages/signup-page';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: 'login',
     element: <LoginPage />,
+  },
+  {
+    path: 'signup',
+    element: <SignUpPage />,
   },
   {
     path: '/admin',
