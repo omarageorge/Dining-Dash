@@ -1,3 +1,5 @@
+import { IconType } from 'react-icons';
+
 type InputProps = {
   name: string;
   value: string;
@@ -24,16 +26,18 @@ export const Input: React.FC<InputProps> = ({
 };
 
 type ButtonProps = {
+  icon: IconType;
   children: React.ReactNode;
 };
 
-export const Button: React.FC<ButtonProps> = ({ children }) => {
+export const Button: React.FC<ButtonProps> = ({ icon: Icon, children }) => {
   return (
     <button
       type='submit'
-      className='bg-slate-800 hover:bg-slate-700 transition delay-100 ease-in px-8 py-4 rounded-md shadow-md text-white font-semibold'
+      className='flex items-center space-x-1 bg-slate-800 hover:bg-slate-700 transition delay-100 ease-in px-8 py-3 rounded-md shadow-md text-white'
     >
-      {children}
+      <Icon />
+      <span className='font-semibold'>{children}</span>
     </button>
   );
 };
