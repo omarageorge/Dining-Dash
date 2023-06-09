@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom';
-import { FaHome, FaConciergeBell, FaMapMarkerAlt } from 'react-icons/fa';
+import {
+  FaHome,
+  FaUser,
+  FaConciergeBell,
+  FaMapMarkerAlt,
+} from 'react-icons/fa';
 import Footer from '../components/Footer';
 import SubTitle from '../components/SubTitle';
 import MenuItem from '../components/MenuItem';
@@ -53,11 +58,18 @@ const RestaurantPage: React.FC = () => {
     <>
       {/* Navigation menu */}
       <nav className='flex items-center justify-between px-8 py-8 bg-slate-800'>
-        <DiningDashLogo />
-
-        <Link to='/' className='text-xl text-gray-100'>
-          <FaHome />
+        <Link to='/'>
+          <DiningDashLogo />
         </Link>
+
+        <div className='flex items-center space-x-6'>
+          <Link to='/' className='text-xl text-gray-100'>
+            <FaHome />
+          </Link>
+          <Link to='/login' className='text-xl text-gray-100'>
+            <FaUser />
+          </Link>
+        </div>
       </nav>
 
       {/* Header section */}
