@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import RestaurantCard from '../components/RestaurantCard';
 import SubTitle from '../components/SubTitle';
@@ -50,10 +51,12 @@ const HomePage: React.FC = () => {
         <div className='absolute z-10 w-full h-full bg-black opacity-60'></div>
         <div className='absolute z-30 w-full h-full flex  items-center justify-center'>
           <div className='text-center space-y-6'>
-            <h1 className='text-4xl italic space-x-1'>
-              <span className='text-orange-500'>Dining</span>
-              <span className='text-yellow-500'>Dash</span>
-            </h1>
+            <Link to='/admin'>
+              <h1 className='text-4xl italic space-x-1'>
+                <span className='text-orange-500'>Dining</span>
+                <span className='text-yellow-500'>Dash</span>
+              </h1>
+            </Link>
 
             <form>
               <input
