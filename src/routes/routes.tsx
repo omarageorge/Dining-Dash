@@ -31,8 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/admin',
-    // element: <ProtectedRoute component={AdminRoot} />,
-    element: <AdminRoot />,
+    element: <ProtectedRoute component={AdminRoot} />,
     children: [
       {
         path: '',
