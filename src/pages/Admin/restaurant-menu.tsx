@@ -1,6 +1,7 @@
 import { FaPlus } from 'react-icons/fa';
 import AdminPageTitle from '../../components/AdminPageTitle';
 import Dish from '../../components/Dish';
+import { Link } from 'react-router-dom';
 
 const RestaurantMenu = () => {
   const dishes = [
@@ -50,17 +51,19 @@ const RestaurantMenu = () => {
     <div className='w-full pb-5'>
       <AdminPageTitle title='Menu' />
 
-      <div className='flex items-center justify-end'>
-        <button className='flex items-center justify-center space-x-2 bg-slate-500 hover:bg-slate-600 border-8 border-slate-400 rounded-md py-2 px-4 text-white'>
-          <span>
-            <FaPlus />
+      <div className='flex items-center justify-end md:w-4/5  md:mx-auto md:pr-4'>
+        <Link to='/admin/restaurants/menu/add'>
+          <span className='flex items-center justify-center space-x-2 bg-slate-500 hover:bg-slate-600 border-8 border-slate-400 rounded-md py-1 px-2 text-sm text-white'>
+            <span>
+              <FaPlus />
+            </span>
+            <span>Add Menu Item</span>
           </span>
-          <span>Add Menu Item</span>
-        </button>
+        </Link>
       </div>
 
       {/* Menu Items */}
-      <div className='mt-8 w-4/5 mx-auto grid grid-cols-2 gap-4 justify-items-center'>
+      <div className='mt-8 w-full grid grid-cols-1 md:w-4/5 md:mx-auto md:grid-cols-2 gap-4 md:justify-items-center'>
         {dishes.map((dish, index) => (
           <Dish key={index} dish={dish} />
         ))}
