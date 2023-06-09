@@ -68,7 +68,7 @@ const RestaurantsList: React.FC = () => {
                   </Link>
 
                   {/* Menu */}
-                  <Link to='/admin/restaurants/edit'>
+                  <Link to='/admin/restaurants/menu'>
                     <span className='rounded-sm border-4 border-green-50 p-1 bg-green-100 hover:bg-green-300 transition-all delay-100 ease-in text-green-600'>
                       <span>Menu</span>
                     </span>
