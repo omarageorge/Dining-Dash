@@ -18,15 +18,25 @@ const Dish: React.FC<DishProps> = ({ dish }) => {
         <FaTimes />
       </div>
 
-      <h2 className='text-xl font-semibold'>{dish.name}</h2>
-      <p className='text-gray-600 mb-2'>{dish.description}</p>
-      <p>
-        <span className='text-gray-800 font-semibold'>Ingredients:</span>
-        <span className='text-gray-700 ml-1'>{dish.ingredients}</span>
+      <h2 className='text-sm font-semibold md:text-lg'>{dish.name}</h2>
+      <p className='text-sm text-gray-600 mb-2  md:text-md'>
+        {dish.description}
       </p>
       <p>
-        <span className='text-gray-800 font-semibold'>Price:</span>
-        <span className='text-gray-700 ml-1'>{dish.price} UGX</span>
+        <span className='text-sm text-gray-800 font-semibold  md:text-md'>
+          Ingredients:
+        </span>
+        <span className='text-sm text-gray-700 ml-1  md:text-md'>
+          {dish.ingredients}
+        </span>
+      </p>
+      <p>
+        <span className='text-sm text-gray-800 font-semibold  md:text-md'>
+          Price:
+        </span>
+        <span className='text-sm text-gray-700 ml-1 md:text-md'>
+          {dish.price} UGX
+        </span>
       </p>
     </div>
   );
