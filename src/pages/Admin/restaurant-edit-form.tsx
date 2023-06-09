@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FcAddImage } from 'react-icons/fc';
+import { FaEdit } from 'react-icons/fa';
 import { Button, FormGroup, Input, Label } from '../../components/Input';
 import AdminPageTitle from '../../components/AdminPageTitle';
 import ImagePreview from '../../components/ImagePreview';
@@ -87,7 +88,7 @@ const RestaurantEditForm: React.FC = () => {
             />
           </FormGroup>
 
-          <Button>Update</Button>
+          <Button icon={FaEdit}>Update</Button>
         </form>
       </div>
     </div>

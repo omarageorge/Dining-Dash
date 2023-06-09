@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FcAddImage } from 'react-icons/fc';
+import { FaSave } from 'react-icons/fa';
 import { Button, Input } from '../../components/Input';
 import AdminPageTitle from '../../components/AdminPageTitle';
 import ImagePreview from '../../components/ImagePreview';
@@ -61,7 +62,6 @@ const RestaurantAddForm: React.FC = () => {
                 )}
 
                 {/* Preview */}
-
                 {selectedImage !== null && <ImagePreview src={selectedImage} />}
               </div>
             </label>
@@ -88,7 +88,7 @@ const RestaurantAddForm: React.FC = () => {
             placeholder='Cuisine type'
           />
 
-          <Button>Create</Button>
+          <Button icon={FaSave}>Save</Button>
         </form>
       </div>
     </div>
